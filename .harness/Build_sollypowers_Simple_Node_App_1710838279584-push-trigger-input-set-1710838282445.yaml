@@ -1,5 +1,6 @@
 inputSet:
   name: Build_sollypowers_Simple_Node_App_1710838279584-push-trigger-input-set
+  tags: {}
   identifier: Build_sollypowers_Simple_Node_App_1710838279584pushtriggerinputset
   orgIdentifier: default
   projectIdentifier: default_project
@@ -12,3 +13,17 @@ inputSet:
             type: branch
             spec:
               branch: <+trigger.branch>
+    stages:
+      - stage:
+          identifier: build
+          type: CI
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: dockerbuild
+                    type: Plugin
+                    spec:
+                      settings:
+                        password: ""
+                        username: ""
