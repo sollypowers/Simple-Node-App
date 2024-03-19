@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_sollypowers_Simple_Node_App_1710838279584-push-trigger-input-set
+  identifier: Build_sollypowers_Simple_Node_App_1710838279584pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_sollypowers_Simple_Node_App_1710838279584
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
