@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_sollypowers_Simple_Node_App_1710838279584-pr-trigger-input-set
+  identifier: Build_sollypowers_Simple_Node_App_1710838279584prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_sollypowers_Simple_Node_App_1710838279584
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
